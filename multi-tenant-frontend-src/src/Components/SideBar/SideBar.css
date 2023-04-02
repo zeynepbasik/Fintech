@@ -1,0 +1,146 @@
+/* Position and sizing of burger button */
+/* .bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 30px;
+} */
+
+/* Color/shape of burger icon bars */
+/* .bm-burger-bars {
+  background: white;
+} */
+
+/* Color/shape of burger icon bars on hover*/
+/* .bm-burger-bars-hover {
+  background: white;
+} */
+
+/* Position and sizing of clickable cross button */
+/* .bm-cross-button {
+  height: 24px;
+  width: 24px;
+} */
+
+/* Color/shape of close button cross */
+/* .bm-cross {
+  background: #bdc3c7;
+} */
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+/* .bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 83px;
+} */
+
+/* General sidebar styles */
+/* .bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+} */
+
+/* Morph shape necessary with bubble or elastic */
+/* .bm-morph-shape {
+  fill: #373a47;
+} */
+
+/* Wrapper for item list */
+/* .bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+} */
+
+/* Individual item */
+/* .bm-item {
+  display: inline-block;
+  color: #d1d1d1;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+} */
+
+/* Styling of overlay */
+/* .bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 25px;
+} */
+/* Individual item */
+
+.menu-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+#dark .menu-item {
+  color: rgb(0, 0, 0);
+}
+#light .menu-item {
+  color: rgb(255, 255, 255);
+}
+
+.menu-item:hover {
+  color: #e64c66 !important;
+}
+
+.menu-item.selected {
+  color: #e64c66 !important;
+}
+
+.menuContainer ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menuContainer ul li {
+  margin: 5% 0 5% 0;
+}
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+#dark .menuContainer {
+  background-color: rgb(225, 225, 226);
+}
+#light .menuContainer {
+  background-color: rgb(183, 183, 207);
+}
+.settings {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 10%;
+  color: white;
+
+  align-self: center;
+}
+.logout {
+  display: flex;
+
+  margin-bottom: 10%;
+
+  align-self: center;
+}
+.logo {
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+  margin: 25% 0 20% 0;
+}
+.switch {
+  display: flex;
+  justify-content: center;
+}

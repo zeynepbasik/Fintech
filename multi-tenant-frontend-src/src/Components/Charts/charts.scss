@@ -1,0 +1,148 @@
+.react-grid-layout {
+  position: relative;
+  transition: height 200ms ease;
+}
+.react-grid-item {
+  transition: all 200ms ease;
+  transition-property: left, top;
+  background: rgba(0, 132, 255, 0.473);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.react-grid-item span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+.react-grid-item.cssTransforms {
+  transition-property: transform;
+}
+.react-grid-item.resizing {
+  z-index: 1;
+  will-change: width, height;
+}
+
+.react-grid-item.react-draggable-dragging {
+  transition: none;
+  z-index: 3;
+  will-change: transform;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: red;
+  opacity: 0.2;
+  transition-duration: 100ms;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.react-grid-item > .react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.react-grid-item > .react-resizable-handle::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.grid-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  position: relative;
+  padding: 8px;
+}
+
+.grid-div select {
+  width: 25%;
+}
+
+.grid-div .drag-handle {
+  background-color: white;
+  border: 0;
+  display: flex;
+  justify-self: start;
+  align-self: flex-start;
+  color: gray;
+  border-radius: 25px;
+}
+
+.grid-div .chart-box {
+  width: 100%;
+}
+
+.chart-page {
+  padding-bottom: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  form {
+    margin: 0;
+    padding: 0;
+    label {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .save-button {
+    border-radius: 20px;
+    background-color: #da252ea9;
+    border: none;
+    color: white;
+  }
+  .save-button:hover {
+    background-color: #da252e;
+  }
+
+  .pinned-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    span {
+      display: flex;
+      justify-content: end;
+    }
+  }
+  .pin-button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: transparent;
+    border: none;
+    margin-left: auto;
+  }
+
+  .pinned-charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-content: stretch;
+    background-color: #f7f7f7;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 20px;
+  }
+
+  .header-save {
+    display: flex;
+    justify-content: space-between;
+  }
+}

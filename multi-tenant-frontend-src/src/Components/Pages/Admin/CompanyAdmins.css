@@ -1,0 +1,18 @@
+.col-md-12 d-none d-md-block bg-light sidebar {
+  margin-left: 0%;
+}
+
+#dark .table-item {
+  color: white;
+}
+#light .table-item {
+  color: black;
+}
+#dark .table-button {
+  color: white;
+  border-color: white;
+}
+#light .table-button {
+  color: black;
+  border-color: black;
+}

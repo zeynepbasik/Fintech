@@ -1,0 +1,132 @@
+@use "../../partials/base";
+.change-form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  .profile-card {
+    width: 50%;
+    gap: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(233, 218, 218);
+
+    padding: 70px;
+    margin-bottom: 100px;
+    h4 {
+      line-height: 0;
+    }
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .i-button {
+        margin-right: 10px;
+      }
+    }
+    .input-group {
+      display: flex;
+      align-items: center;
+      input {
+        width: 90%;
+      }
+
+      button {
+        width: 10%;
+        margin: 0;
+        height: 100%;
+      }
+    }
+    button {
+      align-self: center;
+      margin-top: 20px;
+      border-radius: 15px;
+      border: 2px solid black;
+      width: 35%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button:hover {
+      background-color: white;
+    }
+  }
+  .user-info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h4 {
+      margin-bottom: 50px;
+    }
+    div {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      span {
+        width: 50%;
+      }
+    }
+    #edit-button {
+      width: 30px;
+      height: 25px;
+      padding: 0;
+      border: 0;
+      margin: 0;
+      background-color: rgba(255, 255, 255, 0);
+      margin-left: auto;
+      transform: translateY(40px) translateX(40px);
+    }
+
+    #edit-button:hover {
+      color: #e64c66;
+    }
+    #submit-edit {
+      width: 20%;
+      height: 40px;
+      margin: 0;
+    }
+    .form-group {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+      label {
+        width: 30%;
+        margin: 0;
+      }
+      input {
+        width: 50%;
+        font-size: 14px;
+        height: 30px;
+      }
+    }
+    .phone {
+      width: 50%;
+      label {
+        width: 50%;
+      }
+    }
+  }
+  .hidden {
+    display: none;
+  }
+}
+#dark {
+  .profile-card {
+    background-color: rgb(44, 56, 56);
+  }
+  #edit-button {
+    color: white;
+  }
+
+  button {
+    background-color: rgb(73, 83, 83);
+    color: white;
+    border: 1px solid white;
+  }
+  button:hover {
+    background-color: rgb(14, 22, 22);
+  }
+}
